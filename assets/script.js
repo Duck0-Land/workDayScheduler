@@ -10,11 +10,27 @@ var currentHour = moment().hour();
 
 //save button
 $(".saveBtn").on("click", function(){
-  //Key
   var key = $(this).parent().attr("id").split("-")[1];
-  //Value
   var value = $(this).parent().find(".description").val();
-  //Save Key and Value to Local Storage
+  //local storage
   localStorage.setItem(key,value);
+});
+
+$(".time-block").each(function(){
+  //hour value for each time block
+  var blockHour = $(this).attr("id").split("-")[1];
+
+  //pulls saved value from local storage and puts it in its corrisponding time block
+  var textEntry = localStorage.getItem(blockHour);
+  var textArea = $(this).find(".description");
+  textArea.val (textEntry);
+
+  if (blockHour < currentHour){
+      $(this).find(".description").addClass("past");
+  }else if(blockHour == currentHour){
+      $(this).find(".description").addClass("present");
+  }else{
+      $(this).find(".description").addClass("future");
+   }
 });
 

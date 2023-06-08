@@ -36,3 +36,13 @@ THEN the saved events persist
 https://duck0-land.github.io/workDayScheduler/
 
 https://github.com/Duck0-Land/workDayScheduler
+
+**Usage Guide**
+
+When you enter the page there are to fields you can interact with. A text box abd the save button.
+
+![](./assets/images/dailyPlanner1.jpg)
+
+You fill the text field and then use the save button to keep it localy stored on the page.
+
+![](./assets/images/dailyPlanner2.jpg)

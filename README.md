@@ -31,4 +31,8 @@ WHEN I refresh the page
 
 THEN the saved events persist
 
-**My Link**
+**My Links:**
+
+https://duck0-land.github.io/workDayScheduler/
+
+https://github.com/Duck0-Land/workDayScheduler
